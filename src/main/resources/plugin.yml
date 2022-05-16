@@ -1,0 +1,6 @@
+main: net.akihamitsuki.slash_command_clone.Main
+name: slash_command_clone
+version: 0.1
+api-version: 1.18
+commands:
+  summon-:
