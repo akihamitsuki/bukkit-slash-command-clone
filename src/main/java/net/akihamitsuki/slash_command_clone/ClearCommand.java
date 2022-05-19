@@ -11,7 +11,7 @@ public class ClearCommand implements CommandExecutor {
   @Override
   public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-    if (!isPlayer(sender)) {
+    if (!CommandUtility.isPlayer(sender)) {
       sender.sendMessage("このコマンドはコンソール画面からは使えません");
       // このコマンドは失敗である
       return false;
@@ -25,13 +25,6 @@ public class ClearCommand implements CommandExecutor {
     // clear [<targets>] [<item>] [<maxCount>]
     if (args.length == 0) {
       this.clear(player);
-      return true;
-    }
-    return false;
-  }
-
-  private boolean isPlayer(CommandSender sender) {
-    if (sender instanceof Player) {
       return true;
     }
     return false;
