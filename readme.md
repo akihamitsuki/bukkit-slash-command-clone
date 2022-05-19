@@ -19,4 +19,14 @@
 
 ## 記述済みのコマンド一覧
 
+コマンド名が重ならないように、ここで追加されるコマンド名には最後に`-`が付く。
+
+`/summon` -> `/summon-`
+
+
+### アイテム関係
+* [`/clear`: インベントリ内のアイテムを消去する](src/main/java/net/akihamitsuki/slash_command_clone/ClearCommand.java)
+
+
+### エンティティ関係
 * [`/summon`: エンティティを呼び出す](src/main/java/net/akihamitsuki/slash_command_clone/SummonCommand.java)

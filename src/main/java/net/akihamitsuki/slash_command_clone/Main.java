@@ -13,6 +13,7 @@ public class Main extends JavaPlugin {
   @Override
   public void onEnable() {
     // コマンドを登録する
+    this.getCommand("clear-").setExecutor(new ClearCommand());
     this.getCommand("summon-").setExecutor(new SummonCommand());
   }
 
