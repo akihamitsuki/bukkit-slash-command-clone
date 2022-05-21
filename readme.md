@@ -30,6 +30,7 @@
 
 ### エンティティ
 * [`/summon`: エンティティを呼び出す](src/main/java/net/akihamitsuki/slash_command_clone/SummonCommand.java)
+* [`/kill`: エンティティを倒す・消す](src/main/java/net/akihamitsuki/slash_command_clone/KillCommand.java)
 
 
 ### ワールド

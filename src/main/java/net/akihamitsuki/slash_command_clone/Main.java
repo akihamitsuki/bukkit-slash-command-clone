@@ -14,6 +14,7 @@ public class Main extends JavaPlugin {
   public void onEnable() {
     // コマンドを登録する
     this.getCommand("clear-").setExecutor(new ClearCommand());
+    this.getCommand("kill-").setExecutor(new KillCommand());
     this.getCommand("summon-").setExecutor(new SummonCommand());
     this.getCommand("time-").setExecutor(new TimeCommand());
     this.getCommand("weather-").setExecutor(new WeatherCommand());
