@@ -6,6 +6,7 @@ commands:
   clear-:
   enchant-:
   kill-:
+  particle-:
   summon-:
   time-:
   weather-:

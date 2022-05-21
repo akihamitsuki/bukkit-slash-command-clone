@@ -26,6 +26,7 @@
 
 ### アイテム
 * [`/clear`: インベントリ内のアイテムを消去する](src/main/java/net/akihamitsuki/slash_command_clone/ClearCommand.java)
+* [`/enchant`: アイテムにエンチャントする](src/main/java/net/akihamitsuki/slash_command_clone/EnchantCommand.java)
 
 
 ### エンティティ
@@ -36,4 +37,9 @@
 ### ワールド
 * [`/time`: 時間を操作する](src/main/java/net/akihamitsuki/slash_command_clone/TimeCommand.java)
 * [`/weather`: 天気を操作する](src/main/java/net/akihamitsuki/slash_command_clone/WeatherCommand.java)
+
+
+### 演出
+* [`/particle`: パーティクルを発生させる](src/main/java/net/akihamitsuki/slash_command_clone/ParticleCommand.java)
+
 
