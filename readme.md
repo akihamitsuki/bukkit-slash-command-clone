@@ -24,9 +24,15 @@
 `/summon` -> `/summon-`
 
 
-### アイテム関係
+### アイテム
 * [`/clear`: インベントリ内のアイテムを消去する](src/main/java/net/akihamitsuki/slash_command_clone/ClearCommand.java)
 
 
-### エンティティ関係
+### エンティティ
 * [`/summon`: エンティティを呼び出す](src/main/java/net/akihamitsuki/slash_command_clone/SummonCommand.java)
+
+
+### ワールド
+* [`/time`: 時間を操作する](src/main/java/net/akihamitsuki/slash_command_clone/TimeCommand.java)
+* [`/weather`: 天気を操作する](src/main/java/net/akihamitsuki/slash_command_clone/WeatherCommand.java)
+
