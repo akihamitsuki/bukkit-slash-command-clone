@@ -15,6 +15,7 @@ public class Main extends JavaPlugin {
     // コマンドを登録する
     this.getCommand("clear-").setExecutor(new ClearCommand());
     this.getCommand("summon-").setExecutor(new SummonCommand());
+    this.getCommand("time-").setExecutor(new TimeCommand());
   }
 
 }
