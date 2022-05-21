@@ -121,8 +121,8 @@ public class TimeCommand implements CommandExecutor {
       // 1日のティック数(tick/day)
       // (20ティック / 1秒) * (60秒 / 1分) * (20分 / (マイクラ世界の)1日)
       Long tickParDay = Long.valueOf(20 * 60 * 20);
-      // 日数に直す(tick / (thick/day) = day)
-      // 本来は余りがでるが、整数(Long)どうしの計算なので結果も整数となり、余りが無視されている
+      // 日数に直す(tick / (tick/day) = day)
+      // 本来は余りが出るが、長整数(Long)どうしの計算なので結果も長整数となり、ここでは余りが無視されている
       Long day = gameTick / tickParDay;
       commandSender.sendMessage(Long.toString(day));
     } else {
