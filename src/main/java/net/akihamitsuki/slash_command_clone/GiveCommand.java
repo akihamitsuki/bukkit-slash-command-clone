@@ -35,7 +35,7 @@ public class GiveCommand implements CommandExecutor {
     List<Entity> targets = TargetSelector.getTargets(sender, args[0]);
 
     // アイテムを取得する
-    Material material = this.getMaterial(args[1]);
+    Material material = CommandUtility.getMaterial(args[1]);
     if (material == null) {
       return false;
     }
@@ -70,26 +70,6 @@ public class GiveCommand implements CommandExecutor {
     }
 
     return true;
-  }
-
-  /**
-   * 引数からアイテムの種類を取得する
-   *
-   * @param name アイテム名
-   * @return アイテムの種類
-   */
-  private Material getMaterial(String name) {
-    // 例外処理
-    // ユーザーが入力する場合は、常に正しい値になるとは限らない
-    try {
-      // この処理の時に問題が起きれば catch に移る
-      return Material.valueOf(name.toUpperCase());
-    } catch (IllegalArgumentException e) {
-      // エラーログを表示
-      Bukkit.getLogger().warning("アイテム名が正しくありません。");
-      // 全体の処理はここで中断しないので、nullを返して続ける
-      return null;
-    }
   }
 
   /**

@@ -8,6 +8,7 @@ commands:
   give-:
   kill-:
   particle-:
+  setblock-:
   summon-:
   time-:
   weather-:

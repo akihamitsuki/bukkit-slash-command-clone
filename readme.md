@@ -24,15 +24,19 @@
 `/summon` -> `/summon-`
 
 
+### エンティティ
+* [`/summon`: エンティティを呼び出す](src/main/java/net/akihamitsuki/slash_command_clone/SummonCommand.java)
+* [`/kill`: エンティティを倒す・消す](src/main/java/net/akihamitsuki/slash_command_clone/KillCommand.java)
+
+
+### ブロック
+* [`/setblock`: ブロックを置く](src/main/java/net/akihamitsuki/slash_command_clone/SetblockCommand.java)
+
+
 ### アイテム
 * [`/give`: プレイヤーにアイテムを与える](src/main/java/net/akihamitsuki/slash_command_clone/GiveCommand.java)
 * [`/clear`: インベントリ内のアイテムを消去する](src/main/java/net/akihamitsuki/slash_command_clone/ClearCommand.java)
 * [`/enchant`: アイテムにエンチャントする](src/main/java/net/akihamitsuki/slash_command_clone/EnchantCommand.java)
-
-
-### エンティティ
-* [`/summon`: エンティティを呼び出す](src/main/java/net/akihamitsuki/slash_command_clone/SummonCommand.java)
-* [`/kill`: エンティティを倒す・消す](src/main/java/net/akihamitsuki/slash_command_clone/KillCommand.java)
 
 
 ### ワールド

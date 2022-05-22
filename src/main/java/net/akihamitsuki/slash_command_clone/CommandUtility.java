@@ -2,6 +2,7 @@ package net.akihamitsuki.slash_command_clone;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.EntityType;
@@ -106,6 +107,26 @@ public class CommandUtility {
       // エラーログを表示
       Bukkit.getLogger().warning(String.format("%s座標の値が正しくありません。", axis));
       // エラーの場合はnullを返す
+      return null;
+    }
+  }
+
+  /**
+   * 引数からアイテムの種類を取得する
+   *
+   * @param name アイテム名
+   * @return アイテムの種類
+   */
+  public static Material getMaterial(String name) {
+    // 例外処理
+    // ユーザーが入力する場合は、常に正しい値になるとは限らない
+    try {
+      // この処理の時に問題が起きれば catch に移る
+      return Material.valueOf(name.toUpperCase());
+    } catch (IllegalArgumentException e) {
+      // エラーログを表示
+      Bukkit.getLogger().warning("アイテム名が正しくありません。");
+      // 全体の処理はここで中断しないので、nullを返して続ける
       return null;
     }
   }
