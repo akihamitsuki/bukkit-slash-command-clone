@@ -46,6 +46,10 @@
 * [`/weather`: 天気を操作する](src/main/java/net/akihamitsuki/slash_command_clone/WeatherCommand.java)
 
 
+### ゲーム
+* [`/defaultgamemode`: ゲームモードの初期値を設定する](src/main/java/net/akihamitsuki/slash_command_clone/DefaultGameModeCommand.java)
+
+
 ### 演出
 * [`/particle`: パーティクルを発生させる](src/main/java/net/akihamitsuki/slash_command_clone/ParticleCommand.java)
 
