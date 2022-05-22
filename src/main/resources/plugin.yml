@@ -7,6 +7,7 @@ commands:
   defaultgamemode-:
   effect-:
   enchant-:
+  gamemode-:
   give-:
   kill-:
   particle-:

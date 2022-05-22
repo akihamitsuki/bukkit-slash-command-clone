@@ -29,7 +29,7 @@ public class DefaultGameModeCommand implements CommandExecutor {
    */
   private boolean defaultgamemode(String[] args) {
     // ゲームモードを引数から取得する
-    GameMode mode = this.getGameMode(args[0]);
+    GameMode mode = CommandUtility.getGameMode(args[0]);
     if (mode == null) {
       return false;
     }
@@ -39,21 +39,6 @@ public class DefaultGameModeCommand implements CommandExecutor {
     Bukkit.getLogger().info(String.format("ゲームモードの初期値を %s に設定しました。", mode.toString()));
 
     return true;
-  }
-
-  /**
-   * ゲームモードを引数の値から取得する
-   *
-   * @param arg
-   * @return ゲームモード
-   */
-  private GameMode getGameMode(String arg) {
-    try {
-      return GameMode.valueOf(arg.toUpperCase());
-    } catch (IllegalArgumentException e) {
-      Bukkit.getLogger().warning("ゲームモードが正しくありません。");
-      return null;
-    }
   }
 
 }

@@ -46,8 +46,9 @@
 * [`/weather`: 天気を操作する](src/main/java/net/akihamitsuki/slash_command_clone/WeatherCommand.java)
 
 
-### ゲーム
+### ゲーム設定
 * [`/defaultgamemode`: ゲームモードの初期値を設定する](src/main/java/net/akihamitsuki/slash_command_clone/DefaultGameModeCommand.java)
+* [`/gamemode`: プレイヤーのゲームモードの設定する](src/main/java/net/akihamitsuki/slash_command_clone/GameModeCommand.java)
 
 
 ### 演出

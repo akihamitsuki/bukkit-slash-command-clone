@@ -1,6 +1,7 @@
 package net.akihamitsuki.slash_command_clone;
 
 import org.bukkit.Bukkit;
+import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
@@ -142,6 +143,21 @@ public class CommandUtility {
       // エラーログを表示
       Bukkit.getLogger().warning("アイテム名が正しくありません。");
       // 全体の処理はここで中断しないので、nullを返して続ける
+      return null;
+    }
+  }
+
+  /**
+   * ゲームモードを引数の値から取得する
+   *
+   * @param arg
+   * @return ゲームモード
+   */
+  public static GameMode getGameMode(String arg) {
+    try {
+      return GameMode.valueOf(arg.toUpperCase());
+    } catch (IllegalArgumentException e) {
+      Bukkit.getLogger().warning("ゲームモードが正しくありません。");
       return null;
     }
   }

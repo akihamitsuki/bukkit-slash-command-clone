@@ -17,6 +17,7 @@ public class Main extends JavaPlugin {
     this.getCommand("defaultgamemode-").setExecutor(new DefaultGameModeCommand());
     this.getCommand("effect-").setExecutor(new EffectCommand());
     this.getCommand("enchant-").setExecutor(new EnchantCommand());
+    this.getCommand("gamemode-").setExecutor(new GameModeCommand());
     this.getCommand("give-").setExecutor(new GiveCommand());
     this.getCommand("kill-").setExecutor(new KillCommand());
     this.getCommand("particle-").setExecutor(new ParticleCommand());
