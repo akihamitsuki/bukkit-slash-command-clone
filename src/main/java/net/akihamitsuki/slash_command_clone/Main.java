@@ -15,6 +15,7 @@ public class Main extends JavaPlugin {
     // コマンドを登録する
     this.getCommand("clear-").setExecutor(new ClearCommand());
     this.getCommand("enchant-").setExecutor(new EnchantCommand());
+    this.getCommand("give-").setExecutor(new GiveCommand());
     this.getCommand("kill-").setExecutor(new KillCommand());
     this.getCommand("particle-").setExecutor(new ParticleCommand());
     this.getCommand("summon-").setExecutor(new SummonCommand());

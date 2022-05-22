@@ -5,6 +5,7 @@ api-version: 1.18
 commands:
   clear-:
   enchant-:
+  give-:
   kill-:
   particle-:
   summon-:

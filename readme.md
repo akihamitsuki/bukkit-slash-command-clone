@@ -25,6 +25,7 @@
 
 
 ### アイテム
+* [`/give`: プレイヤーにアイテムを与える](src/main/java/net/akihamitsuki/slash_command_clone/GiveCommand.java)
 * [`/clear`: インベントリ内のアイテムを消去する](src/main/java/net/akihamitsuki/slash_command_clone/ClearCommand.java)
 * [`/enchant`: アイテムにエンチャントする](src/main/java/net/akihamitsuki/slash_command_clone/EnchantCommand.java)
 
