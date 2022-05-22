@@ -10,5 +10,7 @@ commands:
   particle-:
   setblock-:
   summon-:
+  teleport-:
+    aliases: [tp-]
   time-:
   weather-:

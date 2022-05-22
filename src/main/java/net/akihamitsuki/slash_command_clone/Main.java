@@ -20,6 +20,7 @@ public class Main extends JavaPlugin {
     this.getCommand("particle-").setExecutor(new ParticleCommand());
     this.getCommand("setblock-").setExecutor(new SetblockCommand());
     this.getCommand("summon-").setExecutor(new SummonCommand());
+    this.getCommand("teleport-").setExecutor(new TeleportCommand());
     this.getCommand("time-").setExecutor(new TimeCommand());
     this.getCommand("weather-").setExecutor(new WeatherCommand());
   }
