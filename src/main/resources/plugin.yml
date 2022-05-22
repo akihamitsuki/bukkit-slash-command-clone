@@ -4,6 +4,7 @@ version: 0.1
 api-version: 1.18
 commands:
   clear-:
+  effect-:
   enchant-:
   give-:
   kill-:

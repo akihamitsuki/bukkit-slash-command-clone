@@ -28,6 +28,7 @@
 * [`/summon`: エンティティを呼び出す](src/main/java/net/akihamitsuki/slash_command_clone/SummonCommand.java)
 * [`/kill`: エンティティを倒す・消す](src/main/java/net/akihamitsuki/slash_command_clone/KillCommand.java)
 * [`/teleport`: エンティティを移動させる](src/main/java/net/akihamitsuki/slash_command_clone/TeleportCommand.java)
+* [`/effect`: エンティティにポーション効果を与える](src/main/java/net/akihamitsuki/slash_command_clone/EffectCommand.java)
 
 
 ### ブロック

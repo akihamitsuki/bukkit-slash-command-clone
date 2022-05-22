@@ -5,7 +5,9 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
+import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 
 /**
@@ -21,6 +23,19 @@ public class CommandUtility {
    */
   public static boolean isPlayer(CommandSender sender) {
     if (sender instanceof Player) {
+      return true;
+    }
+    return false;
+  }
+
+  /**
+   * エンティティが生きているエンティティかどうか
+   *
+   * @param entity
+   * @return 生物判定
+   */
+  public static boolean isLivingEntity(Entity entity) {
+    if (entity instanceof LivingEntity) {
       return true;
     }
     return false;

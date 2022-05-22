@@ -14,6 +14,7 @@ public class Main extends JavaPlugin {
   public void onEnable() {
     // コマンドを登録する
     this.getCommand("clear-").setExecutor(new ClearCommand());
+    this.getCommand("effect-").setExecutor(new EffectCommand());
     this.getCommand("enchant-").setExecutor(new EnchantCommand());
     this.getCommand("give-").setExecutor(new GiveCommand());
     this.getCommand("kill-").setExecutor(new KillCommand());
