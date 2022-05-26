@@ -16,4 +16,5 @@ commands:
   teleport-:
     aliases: [tp-]
   time-:
+  title-:
   weather-:

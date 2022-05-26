@@ -25,6 +25,7 @@ public class Main extends JavaPlugin {
     this.getCommand("summon-").setExecutor(new SummonCommand());
     this.getCommand("teleport-").setExecutor(new TeleportCommand());
     this.getCommand("time-").setExecutor(new TimeCommand());
+    this.getCommand("title-").setExecutor(new TitleCommand());
     this.getCommand("weather-").setExecutor(new WeatherCommand());
   }
 
