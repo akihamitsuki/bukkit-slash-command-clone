@@ -54,5 +54,6 @@
 ### 演出
 * [`/particle`: パーティクルを発生させる](src/main/java/net/akihamitsuki/slash_command_clone/ParticleCommand.java)
 * [`/title`: 字幕を表示する](src/main/java/net/akihamitsuki/slash_command_clone/TitleCommand.java)
+* [`/playsound`: 音声を再生する](src/main/java/net/akihamitsuki/slash_command_clone/PlaySoundCommand.java)
 
 

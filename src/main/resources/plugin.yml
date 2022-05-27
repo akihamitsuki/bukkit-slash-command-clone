@@ -11,6 +11,7 @@ commands:
   give-:
   kill-:
   particle-:
+  playsound-:
   setblock-:
   summon-:
   teleport-:
