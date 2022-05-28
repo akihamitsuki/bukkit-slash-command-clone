@@ -14,6 +14,7 @@ commands:
   playsound-:
   setblock-:
   setworldspawn-:
+  spawnpoint-:
   stopsound-:
   summon-:
   teleport-:
