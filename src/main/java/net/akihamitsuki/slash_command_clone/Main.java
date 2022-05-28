@@ -23,6 +23,7 @@ public class Main extends JavaPlugin {
     this.getCommand("particle-").setExecutor(new ParticleCommand());
     this.getCommand("playsound-").setExecutor(new PlaySoundCommand());
     this.getCommand("setblock-").setExecutor(new SetblockCommand());
+    this.getCommand("setworldspawn-").setExecutor(new SetWorldSpawnCommand());
     this.getCommand("stopsound-").setExecutor(new StopSoundCommand());
     this.getCommand("summon-").setExecutor(new SummonCommand());
     this.getCommand("teleport-").setExecutor(new TeleportCommand());

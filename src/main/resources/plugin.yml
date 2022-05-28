@@ -13,6 +13,7 @@ commands:
   particle-:
   playsound-:
   setblock-:
+  setworldspawn-:
   stopsound-:
   summon-:
   teleport-:

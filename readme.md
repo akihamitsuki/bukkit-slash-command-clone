@@ -44,6 +44,7 @@
 ### ワールド
 * [`/time`: 時間を操作する](src/main/java/net/akihamitsuki/slash_command_clone/TimeCommand.java)
 * [`/weather`: 天気を操作する](src/main/java/net/akihamitsuki/slash_command_clone/WeatherCommand.java)
+* [`/setworldspawn`: ワールドのスポーン位置を設定する](src/main/java/net/akihamitsuki/slash_command_clone/SetWorldSpawnCommand.java)
 
 
 ### ゲーム設定
