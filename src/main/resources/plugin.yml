@@ -13,6 +13,7 @@ commands:
   particle-:
   playsound-:
   setblock-:
+  stopsound-:
   summon-:
   teleport-:
     aliases: [tp-]

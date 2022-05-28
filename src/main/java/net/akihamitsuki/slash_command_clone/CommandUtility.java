@@ -4,6 +4,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.Sound;
+import org.bukkit.SoundCategory;
 import org.bukkit.World;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
@@ -158,6 +160,43 @@ public class CommandUtility {
       return GameMode.valueOf(arg.toUpperCase());
     } catch (IllegalArgumentException e) {
       Bukkit.getLogger().warning("ゲームモードが正しくありません。");
+      return null;
+    }
+  }
+
+  /**
+   * 音声を引数の値から取得する
+   * https://minecraft.fandom.com/wiki/Sounds.json#Sound_events
+   *
+   * @param name
+   * @return
+   */
+  public static Sound getSound(String name) {
+    // minecraft:entity.generic.explode -> ENTITY_GENERIC_EXPLODE
+    name = name.replace("minecraft:", "").replace(".", "_");
+    // 例外処理
+    // ユーザーが入力する場合は、常に正しい値になるとは限らない
+    try {
+      // この処理の時に問題が起きれば catch に移る
+      return Sound.valueOf(name.toUpperCase());
+    } catch (IllegalArgumentException e) {
+      Bukkit.getLogger().warning("音声の値が正しくありません");
+      // 全体の処理はここで中断しないので、nullを返して続ける
+      return null;
+    }
+  }
+
+  /**
+   * 音声カテゴリを引数の値から取得する
+   *
+   * @param name
+   * @return
+   */
+  public static SoundCategory getSoundCategory(String name) {
+    try {
+      return SoundCategory.valueOf(name.toUpperCase());
+    } catch (IllegalArgumentException e) {
+      Bukkit.getLogger().warning("音声カテゴリの値が正しくありません");
       return null;
     }
   }

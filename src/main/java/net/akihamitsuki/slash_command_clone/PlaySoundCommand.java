@@ -72,13 +72,13 @@ public class PlaySoundCommand implements CommandExecutor {
   }
 
   private boolean playSound(Player player, String[] args) {
-    Sound sound = this.getSound(args[0]);
+    Sound sound = CommandUtility.getSound(args[0]);
     if (sound == null) {
       Bukkit.getLogger().warning("音声の値が正しくありません");
       return false;
     }
 
-    SoundCategory category = this.getSoundCategory(args[1]);
+    SoundCategory category = CommandUtility.getSoundCategory(args[1]);
     if (category == null) {
       Bukkit.getLogger().warning("音声カテゴリの値が正しくありません");
       return false;
@@ -117,35 +117,6 @@ public class PlaySoundCommand implements CommandExecutor {
     }
 
     return true;
-  }
-
-  /**
-   * 再生する音声
-   * https://minecraft.fandom.com/wiki/Sounds.json#Sound_events
-   *
-   * @param name
-   * @return
-   */
-  private Sound getSound(String name) {
-    // minecraft:entity.generic.explode -> ENTITY_GENERIC_EXPLODE
-    name = name.replace("minecraft:", "").replace(".", "_");
-    // 例外処理
-    // ユーザーが入力する場合は、常に正しい値になるとは限らない
-    try {
-      // この処理の時に問題が起きれば catch に移る
-      return Sound.valueOf(name.toUpperCase());
-    } catch (IllegalArgumentException e) {
-      // 全体の処理はここで中断しないので、nullを返して続ける
-      return null;
-    }
-  }
-
-  private SoundCategory getSoundCategory(String name) {
-    try {
-      return SoundCategory.valueOf(name.toUpperCase());
-    } catch (IllegalArgumentException e) {
-      return null;
-    }
   }
 
   private float getFloat(String number) {
