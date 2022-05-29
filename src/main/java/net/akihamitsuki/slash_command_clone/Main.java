@@ -21,6 +21,7 @@ public class Main extends JavaPlugin {
     this.getCommand("bossbar-").setExecutor(new BossBarCommand());
     this.getCommand("clear-").setExecutor(new ClearCommand());
     this.getCommand("defaultgamemode-").setExecutor(new DefaultGameModeCommand());
+    this.getCommand("difficulty-").setExecutor(new DifficultyCommand());
     this.getCommand("effect-").setExecutor(new EffectCommand());
     this.getCommand("enchant-").setExecutor(new EnchantCommand());
     this.getCommand("gamemode-").setExecutor(new GameModeCommand());

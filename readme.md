@@ -50,6 +50,7 @@
 
 ### ゲーム設定
 * [`/defaultgamemode`: ゲームモードの初期値を設定する](src/main/java/net/akihamitsuki/slash_command_clone/DefaultGameModeCommand.java)
+* [`/difficulty`: ゲームの難易度を設定する](src/main/java/net/akihamitsuki/slash_command_clone/DifficultyCommand.java)
 * [`/gamemode`: プレイヤーのゲームモードを設定する](src/main/java/net/akihamitsuki/slash_command_clone/GameModeCommand.java)
 * [`/gamerule`: ワールドのゲームルールを設定する](src/main/java/net/akihamitsuki/slash_command_clone/GameModeCommand.java)
 

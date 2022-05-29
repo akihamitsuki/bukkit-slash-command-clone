@@ -6,6 +6,7 @@ commands:
   bossbar-:
   clear-:
   defaultgamemode-:
+  difficulty-:
   effect-:
   enchant-:
   gamemode-:
