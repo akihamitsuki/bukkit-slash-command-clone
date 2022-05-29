@@ -304,9 +304,6 @@ public class BossBarCommand implements CommandExecutor {
     if (bossBar == null) {
       return false;
     }
-    if (bossBar == null) {
-      return false;
-    }
 
     if (args[2].equalsIgnoreCase("true")) {
       bossBar.setVisible(true);
