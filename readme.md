@@ -58,5 +58,6 @@
 * [`/title`: 字幕を表示する](src/main/java/net/akihamitsuki/slash_command_clone/TitleCommand.java)
 * [`/playsound`: 音声を再生する](src/main/java/net/akihamitsuki/slash_command_clone/PlaySoundCommand.java)
 * [`/stopsound`: 音声を停止する](src/main/java/net/akihamitsuki/slash_command_clone/StopSoundCommand.java)
+* [`/bossbar`: ボスバーを設定する](src/main/java/net/akihamitsuki/slash_command_clone/BossBarCommand.java)
 
 

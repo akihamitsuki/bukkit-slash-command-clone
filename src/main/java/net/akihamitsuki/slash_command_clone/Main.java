@@ -18,6 +18,7 @@ public class Main extends JavaPlugin {
     Main.instance = this;
 
     // コマンドを登録する
+    this.getCommand("bossbar-").setExecutor(new BossBarCommand());
     this.getCommand("clear-").setExecutor(new ClearCommand());
     this.getCommand("defaultgamemode-").setExecutor(new DefaultGameModeCommand());
     this.getCommand("effect-").setExecutor(new EffectCommand());
