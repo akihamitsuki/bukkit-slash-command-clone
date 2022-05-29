@@ -50,7 +50,8 @@
 
 ### ゲーム設定
 * [`/defaultgamemode`: ゲームモードの初期値を設定する](src/main/java/net/akihamitsuki/slash_command_clone/DefaultGameModeCommand.java)
-* [`/gamemode`: プレイヤーのゲームモードの設定する](src/main/java/net/akihamitsuki/slash_command_clone/GameModeCommand.java)
+* [`/gamemode`: プレイヤーのゲームモードを設定する](src/main/java/net/akihamitsuki/slash_command_clone/GameModeCommand.java)
+* [`/gamerule`: ワールドのゲームルールを設定する](src/main/java/net/akihamitsuki/slash_command_clone/GameModeCommand.java)
 
 
 ### 演出

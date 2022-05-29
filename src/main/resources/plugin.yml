@@ -9,6 +9,7 @@ commands:
   effect-:
   enchant-:
   gamemode-:
+  gamerule-:
   give-:
   kill-:
   particle-:
