@@ -24,6 +24,7 @@ public class Main extends JavaPlugin {
     this.getCommand("difficulty-").setExecutor(new DifficultyCommand());
     this.getCommand("effect-").setExecutor(new EffectCommand());
     this.getCommand("enchant-").setExecutor(new EnchantCommand());
+    this.getCommand("experience-").setExecutor(new ExperienceCommand());
     this.getCommand("gamemode-").setExecutor(new GameModeCommand());
     this.getCommand("gamerule-").setExecutor(new GameRuleCommand());
     this.getCommand("give-").setExecutor(new GiveCommand());

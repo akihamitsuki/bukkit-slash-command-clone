@@ -9,6 +9,8 @@ commands:
   difficulty-:
   effect-:
   enchant-:
+  experience-:
+    aliases: [xp-]
   gamemode-:
   gamerule-:
   give-:
